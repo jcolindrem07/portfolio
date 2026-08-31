@@ -43,7 +43,7 @@ export default function PortfolioHome() {
 					<p className='text-lg text-text-muted w-full text-center md:text-start'>
 						{t.hero.tagline}
 					</p>
-					<div className='flex flex-row gap-x-2 w-full justify-center overflow-x-hidden md:justify-start'>
+					<div className='flex flex-row gap-x-2 w-full justify-center overflow-x-hidden flex-wrap md:justify-start'>
 						<Button
 							as='a'
 							href='#projects'
