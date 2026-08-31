@@ -22,7 +22,7 @@ import { QuickGuide } from './components/QuickGuide';
 export default function PortfolioHome() {
 	const { t, lang } = useLanguage();
 
-	const resumeHref = `/resume/resume-${lang}.pdf`;
+	const resumeHref = `./resume/resume-${lang}.pdf`;
 
 	return (
 		<div className='min-h-screen bg-bg font-sans text-text transition-colors duration-300 dark:bg-bg dark:text-text'>
