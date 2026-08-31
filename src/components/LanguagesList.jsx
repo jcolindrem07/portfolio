@@ -13,10 +13,10 @@ export function LanguagesList({ title, languages }) {
 						key={language.index}
 						className='rounded-full border border-border bg-surface px-4 py-2 text-sm'
 					>
-						<span className='font-semibold'>{language.name}</span>
+						<span className='font-semibold'>{language.name}:</span>
 						<span className='text-text-muted'>
 							{' '}
-							— {language.level}
+							{language.level}
 						</span>
 					</li>
 				))}

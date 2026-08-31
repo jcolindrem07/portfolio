@@ -3,6 +3,7 @@ import { SIMPLE_NAME as name } from '../assets/data/contact';
 // One object per language, same shape on both sides
 export const translations = {
 	en: {
+		resume: 'Resume',
 		nav: {
 			about: 'About',
 			skills: 'Skills',
@@ -24,6 +25,7 @@ export const translations = {
 			body: 'Front-End Developer with experience building modern web applications using Angular and React. Bachelor’s in systems engineering (UNAH), graduating November 2026. Strong background in bilingual technical support and Agile software development.',
 			location_title: 'Location',
 			availability_title: 'Availability',
+			availability: 'Remote / On-site',
 		},
 		skills: {
 			title: 'Skills',
@@ -45,6 +47,7 @@ export const translations = {
 		},
 	},
 	es: {
+		resume: 'Curriculum',
 		nav: {
 			about: 'Sobre mí',
 			skills: 'Habilidades',
@@ -66,6 +69,7 @@ export const translations = {
 			body: 'Desarrollador Front-End con experiencia construyendo aplicaciones web modernas usando Angular y React. Licenciatura en Ingeniería en Sistemas (UNAH), con graduación en noviembre de 2026. Sólida experiencia en soporte técnico bilingüe y desarrollo de software con metodologías ágiles.',
 			location_title: 'Ubicación',
 			availability_title: 'Disponibilidad',
+			availability: 'Remoto / Presencial',
 		},
 		skills: {
 			title: 'Habilidades',

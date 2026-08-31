@@ -1,4 +1,10 @@
-import { ArrowRight, MessageCircleMore, FileDown } from 'lucide-react';
+import {
+	ArrowRight,
+	MessageCircleMore,
+	FileDown,
+	MapPin,
+	MonitorSmartphone,
+} from 'lucide-react';
 import { useLanguage } from './lang/LanguageContext';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
@@ -10,21 +16,12 @@ import { experience } from './assets/data/experience';
 import { SkillCard } from './components/SkillCard';
 import { ExperienceCard } from './components/ExperienceCard';
 import { LanguagesList } from './components/LanguagesList';
-import { contact_info } from './assets/data/contact';
+import { contact_info, SIMPLE_NAME } from './assets/data/contact';
 
 export default function PortfolioHome() {
 	const { t, lang } = useLanguage();
 
-	const a = [
-		{
-			index: 1,
-			name: contact_info.location,
-			level: {
-				en: contact_info.avaliability.en,
-				es: contact_info.avaliability.es,
-			},
-		},
-	];
+	const resumeHref = `/resume/resume-${lang}.pdf`;
 
 	return (
 		<div className='min-h-screen bg-bg font-sans text-text transition-colors duration-300 dark:bg-bg dark:text-text'>
@@ -61,8 +58,9 @@ export default function PortfolioHome() {
 						</Button>
 						<Button
 							as='a'
-							href='#contact'
-							variant=''
+							href={resumeHref}
+							download={`${SIMPLE_NAME.replace(/\s+/g, '-')}-${t.resume}-${lang.toUpperCase()}.pdf`}
+							variant='secondary'
 							className='mt-2'
 						>
 							{t.hero.resume_btn} <FileDown size={18} />{' '}
@@ -78,15 +76,29 @@ export default function PortfolioHome() {
 					<p className='leading-relaxed text-text-muted'>
 						{t.about.body}
 					</p>
-					<div>
-						<LanguagesList
-							title={t.about.location_title}
-							languages={a.map((item) => ({
-								index: item.index,
-								name: item.name,
-								level: item.level[lang],
-							}))}
-						/>
+					<div className='mt-10'>
+						<h3 className='mb-4 text-sm font-semibold uppercase tracking-widest text-text-muted'>
+							{t.about.location_title}
+						</h3>
+						<div className='flex flex-wrap gap-3'>
+							<span className='flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 text-sm'>
+								<MapPin size={18} />
+								<span className='font-semibold'>
+									{contact_info.location}
+								</span>
+							</span>
+
+							<span className='flex items-center gap-2 rounded-full border border-border bg-surface px-4 py-2 text-sm'>
+								<MonitorSmartphone size={18} />
+								<span className='text-text-muted'>
+									{t.about.availability_title}
+									{': '}
+									<strong className='font-semibold'>
+										{t.about.availability}
+									</strong>
+								</span>
+							</span>
+						</div>
 					</div>
 				</section>
 			</div>

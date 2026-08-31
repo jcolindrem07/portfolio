@@ -5,7 +5,7 @@ export const skills = [
 			en: 'JavaScript',
 			es: 'JavaScript',
 		},
-		icon: 'Javascript',
+		icon: 'javascript',
 	},
 	{
 		index: 2,
@@ -13,7 +13,7 @@ export const skills = [
 			en: 'TypeScript',
 			es: 'TypeScript',
 		},
-		icon: 'Typescript',
+		icon: 'typescript',
 	},
 	{
 		index: 3,
@@ -21,7 +21,7 @@ export const skills = [
 			en: 'Java',
 			es: 'Java',
 		},
-		icon: 'Java',
+		icon: 'java',
 	},
 	{
 		index: 4,
@@ -29,7 +29,7 @@ export const skills = [
 			en: 'Python',
 			es: 'Python',
 		},
-		icon: 'Python',
+		icon: 'python',
 	},
 	{
 		index: 5,
@@ -37,7 +37,7 @@ export const skills = [
 			en: 'HTML 5',
 			es: 'HTML 5',
 		},
-		icon: 'HTML',
+		icon: 'html5',
 	},
 	{
 		index: 16,
@@ -45,7 +45,7 @@ export const skills = [
 			en: 'CSS 3',
 			es: 'CSS 3',
 		},
-		icon: 'CSS',
+		icon: 'css3',
 	},
 	{
 		index: 6,
@@ -53,7 +53,7 @@ export const skills = [
 			en: 'TailwindCSS',
 			es: 'TailwindCSS',
 		},
-		icon: 'TailwindCSS',
+		icon: 'tailwindcss',
 	},
 	{
 		index: 7,
@@ -61,7 +61,7 @@ export const skills = [
 			en: 'BootStrap',
 			es: 'BootStrap',
 		},
-		icon: 'BootStrap',
+		icon: 'bootstrap',
 	},
 	{
 		index: 8,
@@ -69,7 +69,7 @@ export const skills = [
 			en: 'Angular',
 			es: 'Angular',
 		},
-		icon: 'Angular',
+		icon: 'angular',
 	},
 	{
 		index: 9,
@@ -77,7 +77,7 @@ export const skills = [
 			en: 'React',
 			es: 'React',
 		},
-		icon: 'React',
+		icon: 'react',
 	},
 	{
 		index: 10,
@@ -85,7 +85,7 @@ export const skills = [
 			en: 'NodeJS',
 			es: 'NodeJS',
 		},
-		icon: 'NodeJS',
+		icon: 'nodejs',
 	},
 	{
 		index: 11,
@@ -93,7 +93,7 @@ export const skills = [
 			en: 'PostgreSQL',
 			es: 'PostgreSQL',
 		},
-		icon: 'PostgreSQL',
+		icon: 'postgresql',
 	},
 	{
 		index: 12,
@@ -101,7 +101,7 @@ export const skills = [
 			en: 'MySQL',
 			es: 'MySQL',
 		},
-		icon: 'MySQL',
+		icon: 'mysql',
 	},
 	{
 		index: 13,
@@ -109,7 +109,7 @@ export const skills = [
 			en: 'Git/Github',
 			es: 'Git/Github',
 		},
-		icon: 'Git',
+		icon: 'git',
 	},
 	{
 		index: 14,
@@ -117,7 +117,7 @@ export const skills = [
 			en: 'Postman',
 			es: 'Postman',
 		},
-		icon: 'Postman',
+		icon: 'postman',
 	},
 	{
 		index: 15,
@@ -125,7 +125,7 @@ export const skills = [
 			en: 'Jira',
 			es: 'Jira',
 		},
-		icon: 'Jira',
+		icon: 'jira',
 	},
 ];
 

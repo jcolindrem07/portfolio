@@ -50,7 +50,7 @@ export const projects = [
 			en: 'Frontend for a web-based inventory management system for the Physics Department, built with React and integrated with a Python and PostgreSQL backend.',
 			es: 'Frontend para un sistema web de inventario del Departamento de Física, desarrollado con React e integrado con un backend en Python y PostgreSQL.',
 		},
-		image: './images/projects/gestion-academica-unah.jpg',
+		image: './images/projects/physistock.png',
 		imageAlt: {
 			en: 'Screenshot of the Project Two dashboard',
 			es: 'Captura de pantalla del panel de Proyecto Dos',
