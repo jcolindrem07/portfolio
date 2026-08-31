@@ -45,6 +45,11 @@ export const translations = {
 			title: 'Get in touch',
 			body: 'Available for full-time software engineering roles and web development projects.',
 		},
+		quickGuide: {
+			message:
+				'You can switch between dark/light mode and English/Spanish using the buttons in the top-right corner.',
+			dismiss: 'Got it',
+		},
 	},
 	es: {
 		resume: 'Curriculum',
@@ -88,6 +93,11 @@ export const translations = {
 		contact: {
 			title: 'Contáctame',
 			body: 'Disponible para roles de desarrollo web a tiempo completo.',
+		},
+		quickGuide: {
+			message:
+				'Puedes cambiar entre modo oscuro/claro y español/inglés usando los botones en la esquina superior derecha.',
+			dismiss: 'Entendido',
 		},
 	},
 };

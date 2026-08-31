@@ -17,6 +17,7 @@ import { SkillCard } from './components/SkillCard';
 import { ExperienceList } from './components/ExperienceList';
 import { LanguagesList } from './components/LanguagesList';
 import { contact_info, SIMPLE_NAME } from './assets/data/contact';
+import { QuickGuide } from './components/QuickGuide';
 
 export default function PortfolioHome() {
 	const { t, lang } = useLanguage();
@@ -26,6 +27,10 @@ export default function PortfolioHome() {
 	return (
 		<div className='min-h-screen bg-bg font-sans text-text transition-colors duration-300 dark:bg-bg dark:text-text'>
 			<Navbar />
+			<QuickGuide
+				message={t.quickGuide.message}
+				dismissLabel={t.quickGuide.dismiss}
+			/>
 			<div className='flex flex-col md:flex-row'>
 				{/* ---------- Hero ---------- */}
 				<section className='flex flex-col justify-items-center gap-6 px-6 pb-16 pt-10 w-full md:px-12 md:py-24 md:w-2/3 md:justify-start'>
