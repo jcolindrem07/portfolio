@@ -1,9 +1,8 @@
-import { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, ChevronLeft } from 'lucide-react';
 
 // Same expand/collapse shape as ProjectCard below: shows a compact
 // summary (role, organization, dates) by default, and only reveals the
-// full responsibilities list + tech tags when the user asks for them —
+// full responsibilities list  tech tags when the user asks for them —
 // otherwise a page with several jobs gets very long very fast.
 export function ExperienceCard({
 	title,
@@ -15,11 +14,9 @@ export function ExperienceCard({
 	image,
 	imageAlt,
 	tags,
+	isExpanded,
+	onToggleExpand,
 }) {
-	// Each card owns its own expanded state — expanding one job has no
-	// effect on any other, so this doesn't need to live in App.jsx.
-	const [expanded, setExpanded] = useState(false);
-
 	return (
 		<div className='rounded-2xl border border-border bg-surface p-6'>
 			<div className='flex items-start justify-between gap-4'>
@@ -45,19 +42,19 @@ export function ExperienceCard({
 				{/* aria-expanded tells screen readers this button controls
 				    collapsible content — the rotate-180 is purely the visual cue. */}
 				<button
-					onClick={() => setExpanded((prev) => !prev)}
+					onClick={onToggleExpand}
 					aria-label='Toggle details'
-					aria-expanded={expanded}
-					className='shrink-0 rounded-full p-2 transition hover:opacity-70'
+					aria-expanded={isExpanded}
+					className='shrink-0 rounded-full p-2 transition hover:opacity-70 bg-accent'
 				>
 					<ChevronDown
 						size={20}
-						className={`transition-transform ${expanded ? 'rotate-180' : ''}`}
+						className={`transition-transform text-bg ${isExpanded ? 'rotate-180' : ''}`}
 					/>
 				</button>
 			</div>
 
-			{expanded && (
+			{isExpanded && (
 				<div className='mt-4 border-t border-border pt-4'>
 					<ul className='list-disc space-y-2 pl-5 text-sm leading-relaxed text-text-muted'>
 						{list.map((item, i) => (

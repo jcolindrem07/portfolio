@@ -9,7 +9,9 @@ export const contact_info = {
 	email_href: 'mailto:jcolindrem07@outlook.es',
 	phone: '+504 8804-4372',
 	whatsapp_link: 'https://wa.me/50488044372',
-	linkedin: 'https://www.linkedin.com/in/joseph-colindres',
+	linkedin_handle: 'joseph-colindres',
+	linkedin_url: 'https://www.linkedin.com/in/joseph-colindres',
 	location: 'Tegucigalpa, Honduras',
+	github_handle: 'jcolindrem07',
 	github_url: 'https://github.com/jcolindrem07',
 };

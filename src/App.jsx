@@ -9,12 +9,12 @@ import { useLanguage } from './lang/LanguageContext';
 import { Navbar } from './components/Navbar';
 import { Footer } from './components/Footer';
 import { Button } from './components/Button';
-import { ProjectCard } from './components/ProjectCard';
+import { ProjectsGrid } from './components/ProjectsGrid';
 import { projects } from './assets/data/projects';
 import { skills, languages } from './assets/data/skills';
 import { experience } from './assets/data/experience';
 import { SkillCard } from './components/SkillCard';
-import { ExperienceCard } from './components/ExperienceCard';
+import { ExperienceList } from './components/ExperienceList';
 import { LanguagesList } from './components/LanguagesList';
 import { contact_info, SIMPLE_NAME } from './assets/data/contact';
 
@@ -28,17 +28,17 @@ export default function PortfolioHome() {
 			<Navbar />
 			<div className='flex flex-col md:flex-row'>
 				{/* ---------- Hero ---------- */}
-				<section className='flex flex-col items-start gap-6 px-6 py-24 w-full md:px-12 md:w-2/3'>
-					<p className='text-sm font-semibold uppercase tracking-widest text-text-muted'>
+				<section className='flex flex-col justify-items-center gap-6 px-6 pb-16 pt-10 w-full md:px-12 md:py-24 md:w-2/3 md:justify-start'>
+					<p className='text-sm font-semibold uppercase tracking-widest text-text-muted text-center md:text-start'>
 						{t.hero.role}
 					</p>
-					<h1 className='text-4xl font-extrabold leading-tight md:text-6xl'>
+					<h1 className='text-4xl font-extrabold leading-tight text-center md:text-start md:text-6xl'>
 						{t.hero.heading}
 					</h1>
-					<p className='max-w-xl text-lg text-text-muted'>
+					<p className='text-lg text-text-muted w-full text-center md:text-start'>
 						{t.hero.tagline}
 					</p>
-					<div className='flex flex-row gap-x-2'>
+					<div className='flex flex-row gap-x-2 w-full justify-center overflow-x-hidden md:justify-start'>
 						<Button
 							as='a'
 							href='#projects'
@@ -59,7 +59,7 @@ export default function PortfolioHome() {
 						<Button
 							as='a'
 							href={resumeHref}
-							download={`${SIMPLE_NAME.replace(/\s+/g, '-')}-${t.resume}-${lang.toUpperCase()}.pdf`}
+							download={`${SIMPLE_NAME.replace(/\s/g, '-')}-${t.resume}-${lang.toUpperCase()}.pdf`}
 							variant='secondary'
 							className='mt-2'
 						>
@@ -70,7 +70,7 @@ export default function PortfolioHome() {
 				{/* ---------- About ---------- */}
 				<section
 					id='about'
-					className='px-6 py-16 w-full md:pr-12 md:pl-6 md:pt-20 md:w-1/3'
+					className='px-6 pb-16 pt-0 w-full md:pr-12 md:pl-6 md:pt-20 md:w-1/3'
 				>
 					<h2 className='mb-4 text-2xl font-bold'>{t.about.title}</h2>{' '}
 					<p className='leading-relaxed text-text-muted'>
@@ -105,7 +105,7 @@ export default function PortfolioHome() {
 			{/* ---------- Skills ---------- */}
 			<section
 				id='skills'
-				className='mx-auto max-w-5xl px-6 py-16 md:px-12'
+				className='mx-auto max-w-6xl px-6 pb-16 md:py-16 md:px-12'
 			>
 				<h2 className='mb-8 text-2xl font-bold'>{t.skills.title}</h2>
 				<div className='grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-6'>
@@ -129,52 +129,46 @@ export default function PortfolioHome() {
 			{/* ---------- Experience ---------- */}
 			<section
 				id='experience'
-				className='mx-auto max-w-3xl px-6 py-16 md:px-12'
+				className='mx-auto max-w-6xl px-6 pb-16 md:px-12 md:py-16'
 			>
 				<h2 className='mb-8 text-2xl font-bold'>{t.jobs.title}</h2>
-				<div className='flex flex-col gap-6'>
-					{experience.map((job) => (
-						<ExperienceCard
-							key={job.index}
-							title={job.title[lang]}
-							organization={job.organization[lang]}
-							start_date={job.start_date[lang]}
-							end_date={job.end_date[lang]}
-							type={job.type[lang]}
-							list={job.list[lang]}
-							image={job.image}
-							imageAlt={job.imageAlt[lang]}
-							tags={job.tags}
-						/>
-					))}
-				</div>
+				<ExperienceList
+					jobs={experience.map((job) => ({
+						...job,
+						title: job.title[lang],
+						organization: job.organization[lang],
+						start_date: job.start_date[lang],
+						end_date: job.end_date[lang],
+						type: job.type[lang],
+						list: job.list[lang],
+						imageAlt: job.imageAlt[lang],
+						showLessLabel: t.jobs.showLess,
+					}))}
+				/>
 			</section>
 			{/* ---------- Projects ---------- */}
 			<section
 				id='projects'
-				className='mx-auto max-w-5xl px-6 py-16 md:px-12'
+				className='mx-auto max-w-6xl px-6 pb-16 md:px-12 md:py-16'
 			>
 				<h2 className='mb-8 text-2xl font-bold'>{t.projects.title}</h2>
-				<div className='grid gap-6 md:grid-cols-3'>
-					{/* .map() over the `projects` array declared at the top of the file —
-                add/remove/edit objects there, not here, to update this grid */}
-					{projects.map((project) => (
-						<ProjectCard
-							key={project.index}
-							{...project}
-							title={project.title[lang]}
-							description={project.description[lang]}
-							imageAlt={project.imageAlt[lang]}
-							organization={project.organization?.[lang]}
-							detailed_description={
-								project.detailed_description?.[lang]
-							}
-							bulleted_list={project.bulleted_list?.[lang]}
-							showMoreLabel={t.projects.showMore}
-							showLessLabel={t.projects.showLess}
-						/>
-					))}
-				</div>
+				{/* ProjectsGrid stays language-agnostic — resolve every
+				    translated field into a plain object here, same as before,
+				    just built once as an array instead of inline per-card */}
+				<ProjectsGrid
+					projects={projects.map((project) => ({
+						...project,
+						title: project.title[lang],
+						description: project.description[lang],
+						imageAlt: project.imageAlt[lang],
+						organization: project.organization?.[lang],
+						detailed_description:
+							project.detailed_description?.[lang],
+						bulleted_list: project.bulleted_list?.[lang],
+						showMoreLabel: t.projects.showMore,
+						showLessLabel: t.projects.showLess,
+					}))}
+				/>
 			</section>
 			{/* ---------- Contact / Footer ---------- */}
 			<Footer />

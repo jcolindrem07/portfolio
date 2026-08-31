@@ -6,7 +6,7 @@ export const translations = {
 		resume: 'Resume',
 		nav: {
 			about: 'About',
-			skills: 'Skills',
+			skills: 'Technologies',
 			experience: 'Experience',
 			projects: 'Projects',
 			contact: 'Contact',
@@ -21,7 +21,7 @@ export const translations = {
 			resume_btn: 'Download Resume',
 		},
 		about: {
-			title: 'About',
+			title: 'About Me',
 			body: 'FrontEnd Developer with experience building modern web applications and developing software using Agile methodologies. Systems Engineering graduate from UNAH, with experience in technologies such as Angular, React, and TypeScript, as well as a strong background in technical support and customer service and proficiency in English.',
 			location_title: 'Location',
 			availability_title: 'Availability',
@@ -50,7 +50,7 @@ export const translations = {
 		resume: 'Curriculum',
 		nav: {
 			about: 'Sobre mí',
-			skills: 'Habilidades',
+			skills: 'Tecnologías',
 			experience: 'Experiencia',
 			projects: 'Proyectos',
 			contact: 'Contacto',
@@ -86,7 +86,7 @@ export const translations = {
 			showLess: 'Ver menos',
 		},
 		contact: {
-			title: 'Hablemos',
+			title: 'Contáctame',
 			body: 'Disponible para roles de desarrollo web a tiempo completo.',
 		},
 	},
