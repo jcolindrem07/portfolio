@@ -1,6 +1,8 @@
 export const SIMPLE_NAME = 'Joseph Colindres';
 export const FULL_NAME = 'Joseph Arnaldo Colindres Molina';
 export const FIRST_NAME = 'Joseph';
+export const INITIALS_SM = 'JC';
+export const INITIALS_FULL = 'JACM';
 
 export const contact_info = {
 	email: 'jcolindrem07@outlook.es',

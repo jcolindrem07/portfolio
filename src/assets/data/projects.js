@@ -52,8 +52,8 @@ export const projects = [
 		},
 		image: './images/projects/physistock.png',
 		imageAlt: {
-			en: 'Screenshot of the Project Two dashboard',
-			es: 'Captura de pantalla del panel de Proyecto Dos',
+			en: 'Screenshot of the Inventory Management System login',
+			es: 'Captura de pantalla del login del Sistema Gestor de Inventario',
 		},
 		tags: ['React', 'Python', 'PostgreSQL'],
 		organization: {

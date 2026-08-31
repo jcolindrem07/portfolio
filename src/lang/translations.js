@@ -22,13 +22,13 @@ export const translations = {
 		},
 		about: {
 			title: 'About',
-			body: 'Front-End Developer with experience building modern web applications using Angular and React. Bachelor’s in systems engineering (UNAH), graduating November 2026. Strong background in bilingual technical support and Agile software development.',
+			body: 'FrontEnd Developer with experience building modern web applications and developing software using Agile methodologies. Systems Engineering graduate from UNAH, with experience in technologies such as Angular, React, and TypeScript, as well as a strong background in technical support and customer service and proficiency in English.',
 			location_title: 'Location',
 			availability_title: 'Availability',
 			availability: 'Remote / On-site',
 		},
 		skills: {
-			title: 'Skills',
+			title: 'Technologies',
 		},
 		jobs: {
 			title: 'Professional Experience',
@@ -66,13 +66,13 @@ export const translations = {
 		},
 		about: {
 			title: 'Sobre mí',
-			body: 'Desarrollador Front-End con experiencia construyendo aplicaciones web modernas usando Angular y React. Licenciatura en Ingeniería en Sistemas (UNAH), con graduación en noviembre de 2026. Sólida experiencia en soporte técnico bilingüe y desarrollo de software con metodologías ágiles.',
+			body: 'Desarrollador Front-End con experiencia en la creación de aplicaciones web modernas y en el desarrollo de software bajo metodologías ágiles. Egresado de Ingeniería en Sistemas de la UNAH, con experiencia en tecnologías como Angular, React y TypeScript, además de una sólida trayectoria en soporte técnico y servicio al cliente y dominio del idioma inglés.',
 			location_title: 'Ubicación',
 			availability_title: 'Disponibilidad',
 			availability: 'Remoto / Presencial',
 		},
 		skills: {
-			title: 'Habilidades',
+			title: 'Tecnologías',
 		},
 		jobs: {
 			title: 'Experiencia laboral',
