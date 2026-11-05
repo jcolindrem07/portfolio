@@ -15,14 +15,14 @@ export const translations = {
 			role: 'Software Developer',
 			heading: `Hi, I'm ${name}.`,
 			tagline:
-				'Systems engineer with experience building web applications, specializing in Angular and React with MySQL database management.',
+				'Systems engineer with experience building web applications and software quality assurance (QA).',
 			cta: 'View my work',
 			contact_btn: 'Contact',
 			resume_btn: 'Download Resume',
 		},
 		about: {
 			title: 'About Me',
-			body: 'FrontEnd Developer with experience building modern web applications and developing software using Agile methodologies. Systems Engineering graduate from UNAH, with experience in technologies such as Angular, React, and TypeScript, as well as a strong background in technical support and customer service and proficiency in English.',
+			body: 'Systems Engineer with experience in web application development and software quality assurance (QA), including Front-End development and test automation as a Junior SDET. Experienced in working with technologies such as Angular, React, Next.js, and TypeScript, as well as designing and executing automated tests using Playwright and the BDD (Behavior-Driven Development) approach. Knowledgeable in databases, Agile methodologies, and CI/CD processes. Additional background in technical support and bilingual customer service, with a B2 level of English proficiency.',
 			location_title: 'Location',
 			availability_title: 'Availability',
 			availability: 'Remote / On-site',
@@ -64,14 +64,14 @@ export const translations = {
 			role: 'Desarrollador de Software',
 			heading: `Hola, soy ${name}.`,
 			tagline:
-				'Ingeniero en sistemas con experiencia en el desarrollo de aplicaciones web, especializado en Angular y React con gestión de bases de datos en MySQL.',
+				'Ingeniero en sistemas con experiencia en el desarrollo de aplicaciones web y aseguramiento de calidad de software (QA).',
 			cta: 'Ver mi trabajo',
 			contact_btn: 'Contáctame',
 			resume_btn: 'Descargar Currículum',
 		},
 		about: {
 			title: 'Sobre mí',
-			body: 'Desarrollador Front-End con experiencia en la creación de aplicaciones web modernas y en el desarrollo de software bajo metodologías ágiles. Egresado de Ingeniería en Sistemas de la UNAH, con experiencia en tecnologías como Angular, React y TypeScript, además de una sólida trayectoria en soporte técnico y servicio al cliente y dominio del idioma inglés.',
+			body: 'Ingeniero en Sistemas con experiencia en desarrollo de aplicaciones web y aseguramiento de calidad de software (QA), incluyendo desarrollo Front-End y automatización de pruebas en el rol de SDET Jr. Experiencia trabajando con tecnologías como Angular, React, Next.js y TypeScript, así como en diseño y ejecución de pruebas automatizadas con Playwright bajo el enfoque BDD. Conocimientos en bases de datos, metodologías ágiles y procesos de CI/CD. Trayectoria complementaria en soporte técnico y servicio al cliente bilingüe, con nivel de inglés B2.',
 			location_title: 'Ubicación',
 			availability_title: 'Disponibilidad',
 			availability: 'Remoto / Presencial',
@@ -92,7 +92,7 @@ export const translations = {
 		},
 		contact: {
 			title: 'Contáctame',
-			body: 'Disponible para roles de desarrollo web a tiempo completo.',
+			body: 'Disponible para roles a tiempo completo de desarrollo de software y proyectos de desarrollo web.',
 		},
 		quickGuide: {
 			message:

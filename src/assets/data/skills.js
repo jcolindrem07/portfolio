@@ -127,6 +127,46 @@ export const skills = [
 		},
 		icon: 'jira',
 	},
+	{
+		index: 16,
+		title: {
+			en: 'Playwright',
+			es: 'Playwright',
+		},
+		icon: 'playwright',
+	},
+	{
+		index: 17,
+		title: {
+			en: 'Vercel',
+			es: 'Vercel',
+		},
+		icon: 'vercel',
+	},
+	{
+		index: 18,
+		title: {
+			en: 'Next.js',
+			es: 'Next.js',
+		},
+		icon: 'nextjs',
+	},
+	{
+		index: 19,
+		title: {
+			en: 'Neon',
+			es: 'Neon',
+		},
+		icon: 'neon',
+	},
+	{
+		index: 20,
+		title: {
+			en: 'DrizzleORM',
+			es: 'DrizzleORM',
+		},
+		icon: 'drizzle',
+	},
 ];
 
 export const languages = [
@@ -138,6 +178,6 @@ export const languages = [
 	{
 		index: 2,
 		name: { en: 'English', es: 'Inglés' },
-		level: { en: 'Advanced', es: 'Avanzado' },
+		level: { en: 'B2', es: 'B2' },
 	},
 ];
