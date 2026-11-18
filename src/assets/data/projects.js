@@ -1,6 +1,7 @@
 export const projects = [
 	{
 		index: 1,
+		isVisible: true,
 		title: {
 			en: 'Academic Management System Modernization',
 			es: 'Modernización de Sistema de Gestión Académica',
@@ -44,6 +45,7 @@ export const projects = [
 	},
 	{
 		index: 2,
+		isVisible: true,
 		title: {
 			en: 'Inventory Management System',
 			es: 'Sistema de Inventario',

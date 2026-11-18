@@ -1,6 +1,7 @@
 export const skills = [
 	{
 		index: 1,
+		isVisible: true,
 		title: {
 			en: 'JavaScript',
 			es: 'JavaScript',
@@ -9,6 +10,7 @@ export const skills = [
 	},
 	{
 		index: 2,
+		isVisible: true,
 		title: {
 			en: 'TypeScript',
 			es: 'TypeScript',
@@ -17,6 +19,7 @@ export const skills = [
 	},
 	{
 		index: 3,
+		isVisible: true,
 		title: {
 			en: 'Java',
 			es: 'Java',
@@ -25,6 +28,7 @@ export const skills = [
 	},
 	{
 		index: 4,
+		isVisible: true,
 		title: {
 			en: 'Python',
 			es: 'Python',
@@ -33,6 +37,7 @@ export const skills = [
 	},
 	{
 		index: 5,
+		isVisible: true,
 		title: {
 			en: 'HTML 5',
 			es: 'HTML 5',
@@ -40,7 +45,8 @@ export const skills = [
 		icon: 'html5',
 	},
 	{
-		index: 16,
+		index: 21,
+		isVisible: true,
 		title: {
 			en: 'CSS 3',
 			es: 'CSS 3',
@@ -49,6 +55,7 @@ export const skills = [
 	},
 	{
 		index: 6,
+		isVisible: true,
 		title: {
 			en: 'TailwindCSS',
 			es: 'TailwindCSS',
@@ -57,6 +64,7 @@ export const skills = [
 	},
 	{
 		index: 7,
+		isVisible: true,
 		title: {
 			en: 'BootStrap',
 			es: 'BootStrap',
@@ -65,6 +73,7 @@ export const skills = [
 	},
 	{
 		index: 8,
+		isVisible: true,
 		title: {
 			en: 'Angular',
 			es: 'Angular',
@@ -73,6 +82,7 @@ export const skills = [
 	},
 	{
 		index: 9,
+		isVisible: true,
 		title: {
 			en: 'React',
 			es: 'React',
@@ -81,6 +91,7 @@ export const skills = [
 	},
 	{
 		index: 10,
+		isVisible: true,
 		title: {
 			en: 'NodeJS',
 			es: 'NodeJS',
@@ -89,6 +100,7 @@ export const skills = [
 	},
 	{
 		index: 11,
+		isVisible: true,
 		title: {
 			en: 'PostgreSQL',
 			es: 'PostgreSQL',
@@ -97,6 +109,7 @@ export const skills = [
 	},
 	{
 		index: 12,
+		isVisible: true,
 		title: {
 			en: 'MySQL',
 			es: 'MySQL',
@@ -105,6 +118,7 @@ export const skills = [
 	},
 	{
 		index: 13,
+		isVisible: true,
 		title: {
 			en: 'Git/Github',
 			es: 'Git/Github',
@@ -113,6 +127,7 @@ export const skills = [
 	},
 	{
 		index: 14,
+		isVisible: true,
 		title: {
 			en: 'Postman',
 			es: 'Postman',
@@ -121,6 +136,7 @@ export const skills = [
 	},
 	{
 		index: 15,
+		isVisible: true,
 		title: {
 			en: 'Jira',
 			es: 'Jira',
@@ -129,6 +145,7 @@ export const skills = [
 	},
 	{
 		index: 16,
+		isVisible: true,
 		title: {
 			en: 'Playwright',
 			es: 'Playwright',
@@ -137,6 +154,7 @@ export const skills = [
 	},
 	{
 		index: 17,
+		isVisible: true,
 		title: {
 			en: 'Vercel',
 			es: 'Vercel',
@@ -145,6 +163,7 @@ export const skills = [
 	},
 	{
 		index: 18,
+		isVisible: true,
 		title: {
 			en: 'Next.js',
 			es: 'Next.js',
@@ -153,6 +172,7 @@ export const skills = [
 	},
 	{
 		index: 19,
+		isVisible: true,
 		title: {
 			en: 'Neon',
 			es: 'Neon',
@@ -161,6 +181,7 @@ export const skills = [
 	},
 	{
 		index: 20,
+		isVisible: true,
 		title: {
 			en: 'DrizzleORM',
 			es: 'DrizzleORM',

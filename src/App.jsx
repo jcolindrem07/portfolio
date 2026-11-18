@@ -114,13 +114,15 @@ export default function PortfolioHome() {
 			>
 				<h2 className='mb-8 text-2xl font-bold'>{t.skills.title}</h2>
 				<div className='grid grid-cols-3 gap-4 sm:grid-cols-4 md:grid-cols-6'>
-					{skills.map((skill) => (
-						<SkillCard
-							key={skill.index}
-							title={skill.title[lang]}
-							icon={skill.icon}
-						/>
-					))}
+					{skills
+						.filter((skill) => skill.isVisible)
+						.map((skill) => (
+							<SkillCard
+								key={skill.index}
+								title={skill.title[lang]}
+								icon={skill.icon}
+							/>
+						))}
 				</div>
 				<LanguagesList
 					title={t.languages.title}
@@ -138,17 +140,19 @@ export default function PortfolioHome() {
 			>
 				<h2 className='mb-8 text-2xl font-bold'>{t.jobs.title}</h2>
 				<ExperienceList
-					jobs={experience.map((job) => ({
-						...job,
-						title: job.title[lang],
-						organization: job.organization[lang],
-						start_date: job.start_date[lang],
-						end_date: job.end_date[lang],
-						type: job.type[lang],
-						list: job.list[lang],
-						imageAlt: job.imageAlt[lang],
-						showLessLabel: t.jobs.showLess,
-					}))}
+					jobs={experience
+						.filter((job) => job.isVisible)
+						.map((job) => ({
+							...job,
+							title: job.title[lang],
+							organization: job.organization[lang],
+							start_date: job.start_date[lang],
+							end_date: job.end_date[lang],
+							type: job.type[lang],
+							list: job.list[lang],
+							imageAlt: job.imageAlt[lang],
+							showLessLabel: t.jobs.showLess,
+						}))}
 				/>
 			</section>
 			{/* ---------- Projects ---------- */}
@@ -161,18 +165,20 @@ export default function PortfolioHome() {
 				    translated field into a plain object here, same as before,
 				    just built once as an array instead of inline per-card */}
 				<ProjectsGrid
-					projects={projects.map((project) => ({
-						...project,
-						title: project.title[lang],
-						description: project.description[lang],
-						imageAlt: project.imageAlt[lang],
-						organization: project.organization?.[lang],
-						detailed_description:
-							project.detailed_description?.[lang],
-						bulleted_list: project.bulleted_list?.[lang],
-						showMoreLabel: t.projects.showMore,
-						showLessLabel: t.projects.showLess,
-					}))}
+					projects={projects
+						.filter((project) => project.isVisible)
+						.map((project) => ({
+							...project,
+							title: project.title[lang],
+							description: project.description[lang],
+							imageAlt: project.imageAlt[lang],
+							organization: project.organization?.[lang],
+							detailed_description:
+								project.detailed_description?.[lang],
+							bulleted_list: project.bulleted_list?.[lang],
+							showMoreLabel: t.projects.showMore,
+							showLessLabel: t.projects.showLess,
+						}))}
 				/>
 			</section>
 			{/* ---------- Contact / Footer ---------- */}

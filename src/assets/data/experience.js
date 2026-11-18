@@ -1,6 +1,7 @@
 export const experience = [
 	{
 		index: 1,
+		isVisible: true,
 		title: {
 			en: 'Junior SDET',
 			es: 'SDET Jr.',
@@ -50,6 +51,7 @@ export const experience = [
 	},
 	{
 		index: 2,
+		isVisible: true,
 		title: {
 			en: 'Front-End Developer',
 			es: 'Desarrollador Front-End',
